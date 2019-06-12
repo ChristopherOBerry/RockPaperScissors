@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Rock, Paper, Scissors - Shoot!</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<!--write html below this line-->
+	<div class="container-fluid">
+		<div class="row" style="height:5vh;"></div>
+		<div class="row">
+			<div class="col-12 text-center"><h1>Rock, Paper, Scissors - Shoot!</h1></div>
+			<div class="col-12 text-center"><h4>Choose an option:</h4></div>
+			<div class="col-12 style" style="height:5vh;"></div>
+			<div class="col text-center"><img style="height:35vh; width:35vh;"src="the rock.jfif" alt="rock image"></div>
+			<div class="col text-center"><img style="height:35vh; width:35vh;"src="paper.jfif" alt="paper image"> </div>
+			<div class="col text-center"><img style="height:35vh; width:35vh;"src="scissors.jfif" alt="scissors"></div>
+		</div>
+		<div class="row">
+			<div class="col-4 text-center p-4"><button type="button" class="btn btn-primary" onclick="play('rock')">Rock</button></div>
+			<div class="col-4 text-center p-4"><button type="button" class="btn btn-primary" onclick="play('paper')">Paper</button></div>
+			<div class="col-4 text-center p-4"><button type="button" class="btn btn-primary" onclick="play('scissors')">Scissors</button></div>
+		</div>
+		<div class="row">
+			<div class="col-6 text-center pt-4 pb-4"><h4>You threw:</h4> <h4 id="userChoice" >&nbsp;</h4></div>
+			<div class="col-6 text-center pt-4 pb-4"><h4>They threw:</h4> <h4 id="cpuChoice">&nbsp;</h4></div>
+			
+			<div class="col-12 text-center pb-4 pb-4"><h4 id="result">&nbsp;</h4></div>
+		</div>
+	</div>
+	
+	
+	<!--write html above this line-->
+	<!--the following line is used to link your javascript file.-->
+	<script src="app.js"></script>
+</body>
+</html>
