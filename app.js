@@ -1,6 +1,3 @@
-
-
-    
 function play (entry)
 {
     let result;
@@ -21,7 +18,6 @@ function play (entry)
     console.log(result)
     
     let number = Math.floor((Math.random() * 3))
-    
 
     switch (number) {
         case 0:
@@ -41,8 +37,6 @@ function play (entry)
     let cpuChoice = document.querySelector("#cpuChoice")
     let gameResult = document.querySelector("#result")
 
-    
-    
     if (result == 'rock' && cpuResult == 'rock')
     {
         console.log("You Tied!")
@@ -92,10 +86,6 @@ function play (entry)
     yourChoice.innerHTML = result.toString()
     cpuChoice.innerHTML = cpuResult.toString()
     gameResult.innerHTML = finalResult;
-    
-    
-
-
     
 }
 
